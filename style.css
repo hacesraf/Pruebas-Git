@@ -13,6 +13,16 @@
   box-sizing: border-box;
 }
 
+.logo2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo2 span {
+    color: #4CAF50;
+}
+
 html,
 body {
   margin: 0;
