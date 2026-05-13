@@ -1,75 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <div class="logo2">Shop<span>X</span></div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda en Línea - Ecommerce</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #333; color: white; padding: 1rem; text-align: center; }
-        .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 2rem; }
-        .product { border: 1px solid #ddd; margin: 1rem; padding: 1rem; width: 200px; text-align: center; }
-        button { background-color: #4CAF50; color: white; border: none; padding: 0.5rem; cursor: pointer; }
-    </style>
+    <title>ShopX - Tienda en Línea</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Tienda en Línea</h1>
-        <p>¡Bienvenido a nuestra tienda de ecommerce!</p>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">Shop<span class="logo-accent">X</span></span>
+                </div>
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Productos</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Carrito</a>
+                </nav>
+            </div>
+        </div>
     </header>
-    <section>   
-        <img class="logo2" src="https://www.pngegg.com/es/png-imnsk" 
-             alt="Banner de la tienda" style="width:100%; height:auto;"> 
-    </section>
-    <section class="products">
-        <div class="product">
-            <h3>Producto 1</h3>
-            <p>Descripción del producto 1.</p>
-            <p>Precio: $10.00</p>
-            <button>Agregar al Carrito</button>
-        </div>
-        <div class="product">
-            <h3>Producto 2</h3>
-            <p>Descripción del producto 2.</p>
-            <p>Precio: $20.00</p>
-            <button>Agregar al Carrito</button>
-        </div>
-        <div class="product">
-            <h3>Producto 3</h3>
-            <p>Descripción del producto 3.</p>
-            <p>Precio: $30.00</p>
-            <p>Stock: 30.00</p>
-            <button>Agregar al Carrito</button>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bienvenido a ShopX</h1>
+                <p>Descubre nuestros productos exclusivos con la mejor calidad</p>
+            </div>
         </div>
     </section>
-<footer>
-    <p>&copy; 2026 Tienda en Línea. Todos los derechos reservados.</p>
-    <p>
-        <a href="#">Aviso de Privacidad</a> | 
-        <a href="#">Términos y Condiciones</a> | 
-        <a href="#">Contacto</a>
-    </p>
-</footer>
 
-<style>
-    footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 1rem;
-        margin-top: 2rem;
-    }
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop&crop=center" alt="Producto Premium">
+                    </div>
+                    <div class="product-content">
+                        <h3>Producto Premium</h3>
+                        <p class="product-desc">Descripción del producto con características destacadas.</p>
+                        <div class="product-footer">
+                            <span class="price">$10.00</span>
+                            <button class="btn btn-primary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.707 15.293C4.077 15.923 4.523 17 5.414 17H17M17 17C15.895 17 15 17.895 15 19C15 20.105 15.895 21 17 21C18.105 21 19 20.105 19 19C19 17.895 18.105 17 17 17ZM9 19C9 20.105 8.105 21 7 21C5.895 21 5 20.105 5 19C5 17.895 5.895 17 7 17C8.105 17 9 17.895 9 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-    footer a {
-        color: #4CAF50;
-        text-decoration: none;
-        margin: 0 0.5rem;
-    }
+                <div class="product">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop&crop=center" alt="Producto Destacado">
+                    </div>
+                    <div class="product-content">
+                        <h3>Producto Destacado</h3>
+                        <p class="product-desc">Nuestro artículo más vendido con excelentes reseñas.</p>
+                        <div class="product-footer">
+                            <span class="price">$20.00</span>
+                            <button class="btn btn-primary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.707 15.293C4.077 15.923 4.523 17 5.414 17H17M17 17C15.895 17 15 17.895 15 19C15 20.105 15.895 21 17 21C18.105 21 19 20.105 19 19C19 17.895 18.105 17 17 17ZM9 19C9 20.105 8.105 21 7 21C5.895 21 5 20.105 5 19C5 17.895 5.895 17 7 17C8.105 17 9 17.895 9 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-    footer a:hover {
-        text-decoration: underline;
-    }
-</style>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop&crop=center" alt="Producto Exclusivo">
+                    </div>
+                    <div class="product-content">
+                        <h3>Producto Exclusivo</h3>
+                        <p class="product-desc">Edición limitada disponible por tiempo limitado.</p>
+                        <div class="product-footer">
+                            <span class="price">$30.00</span>
+                            <button class="btn btn-primary">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1545127398-14699f92334b?w=400&h=300&fit=crop&crop=center" alt="Producto Lujo">
+                    </div>
+                    <div class="product-content">
+                        <h3>Producto Lujo</h3>
+                        <p class="product-desc">Colección premium para clientes exigentes.</p>
+                        <div class="product-footer">
+                            <span class="price">$45.00</span>
+                            <button class="btn btn-primary">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 ShopX. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Aviso de Privacidad</a> | 
+                    <a href="#">Términos y Condiciones</a> | 
+                    <a href="#">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
